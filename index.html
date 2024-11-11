@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amphi & Navajo Projects - Interactive Orthophoto Viewer</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Body Styling */
+    body {
+      background-color: #fff;
+      color: #000;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Header Section */
+    header {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #000;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    /* What Exactly is Drone Mapping Section */
+    .mapping-info {
+      background-color: #f8f8f8;
+      color: #111;
+      padding: 20px;
+      width: 100%;
+      max-width: 1200px;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .mapping-info h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .mapping-info p {
+      font-size: 1.1rem;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    /* Video Section */
+    .video-container {
+      width: 100%;
+      max-width: 1200px;
+      margin-bottom: 30px;
+      border: 5px solid #000; /* Black border for video section */
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+
+    /* Interactive Section */
+    .interactive-section {
+      width: 100%;
+      max-width: 1200px;
+      background-color: #222;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      margin-bottom: 30px;
+      color: #fff; /* White text on black background */
+    }
+
+    /* Embed Container (for Orthophoto) */
+    .embed-container {
+      width: 100%;
+      height: 450px;
+      background-color: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 5px solid #000; /* Black border for iframe section */
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Instructions for using the viewer */
+    .viewer-instructions {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    /* Button Styling */
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #0073e6; /* Blue button color */
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #005bb5; /* Darker blue on hover */
+    }
+
+    /* Footer Section */
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #0073e6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Client Name Section -->
+  <header>
+    <h1>Amphi & Navajo Projects - Interactive Orthophoto Viewer</h1>
+    <p>Explore the high-resolution orthophotos of key areas, overlaid on interactive maps. Use the viewers below to zoom in, pan around, and analyze the details.</p>
+  </header>
+
+  <!-- What Exactly is Drone Mapping Section -->
+  <div class="mapping-info">
+    <h2>What exactly is drone mapping?</h2>
+    <p>Drone mapping uses UAVs (unmanned aerial vehicles) to capture high-quality aerial imagery of a specific area. These images are then processed into detailed orthophotos, which provide accurate, georeferenced maps. It’s the perfect solution for monitoring large areas, creating 3D models, or gathering data for construction, agriculture, or surveying purposes.</p>
+    <p>Watch the video below to see the complete process of how we take drone imagery and transform it into an orthophoto!</p>
+  </div>
+
+  <!-- Video Section -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/3imMhivDcik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Interactive Section for Orthophoto Viewers -->
+  <div class="interactive-section">
+    <h2>Amphi High School Soccer Field</h2>
+    <div class="embed-container">
+      <iframe src="https://hub.dronedb.app/r/swood1141/amphi-test/view/QU1QSEkgVjEudGlm/map?embed=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p class="viewer-instructions">
+      To use the viewer: You can zoom in/out using the mouse scroll or buttons, and pan the map by clicking and dragging. Click on various markers for additional details if available.
+    </p>
+  </div>
+
+  <div class="interactive-section">
+    <h2>Navajo North</h2>
+    <div class="embed-container">
+      <iframe src="https://hub.dronedb.app/r/swood1141/navajo-north-ortho/view/b2RtX29ydGhvcGhvdG8udGlm/map?embed=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p class="viewer-instructions">
+      To use the viewer: Zoom in/out using the mouse or buttons, and drag to explore the area. The map allows for detailed exploration of the north side of Navajo Rd.
+    </p>
+  </div>
+
+  <div class="interactive-section">
+    <h2>Navajo South</h2>
+    <div class="embed-container">
+      <iframe src="https://hub.dronedb.app/r/swood1141/navajo-south-ortho/view/b2RtX29ydGhvcGhvdG8udGlm/map?embed=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p class="viewer-instructions">
+      To use the viewer: Zoom and pan to inspect the south side of Navajo Rd. You can interact with the map to uncover additional geographic details.
+    </p>
+  </div>
+
+  <!-- Interactive 3D Model Section -->
+  <div class="interactive-section">
+    <h2>3D Model of the Area</h2>
+    <div class="embed-container">
+      <iframe src="https://hub.dronedb.app/r/swood1141/3d-test/view/b2RtX3RleHR1cmVkX21vZGVsX2dlby5vYmo=/model?embed=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p class="viewer-instructions">
+      Explore the 3D model by rotating and zooming in on different features of the site.
+    </p>
+  </div>
+
+  <!-- Call to Action Button -->
+  <a href="https://southwestdronetech.com/" class="cta-button">Explore More Projects</a>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>For more advanced services, <a href="https://southwestdronetech.com/">visit Southwest Drone Tech</a>.</p>
+  </footer>
+
+</body>
+</html>

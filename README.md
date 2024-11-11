@@ -12,5 +12,8 @@ The purpose of this page is to provide clients with access to their drone footag
 - **3D Model Viewer**: View and interact with 3D models embedded in the page.
 - **Downloadable Deliverables**: Clients can access and download their project files.
 
+[Click here to view the Client Deliverables Page](https://southwestdronetech.github.io/Southwest-Drone-Tech---Client-Deliverables-Page)
+
+![Tablet Map](https://southwestdronetech.com/wp-content/uploads/2024/08/tablet-map.png)
 
 
